@@ -1,0 +1,57 @@
+<div class="backdrop">
+  <div class="modal">
+    <button type="button" class="modal__button">
+      <img src="./images/close.svg" alt="" width="24" height="24" />
+    </button>
+    <h2 class="modal__title title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h2>
+    <p class="modal__text text">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal__form">
+      <input
+        type="text"
+        name="name"
+        class="modal__form-input"
+        autofocus
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+        placeholder="Name"
+      />
+
+      <input
+        type="tel"
+        name="tel"
+        class="modal__form-input"
+        placeholder="Phone"
+        required
+        pattern="[0-9] {9,12}"
+        title="Phone number must consist of numbers from 0 to 9"
+      />
+
+      <input
+        type="email"
+        name="email"
+        class="modal__form-input"
+        placeholder="Email"
+        required
+      />
+
+      <textarea
+        name="coment"
+        cols="30"
+        rows="7"
+        class="modal__form-textarea"
+        placeholder="Comment"
+      ></textarea>
+
+      <button type="submit" class="modal__form-button">Submit</button>
+    </form>
+  </div>
+</div>
