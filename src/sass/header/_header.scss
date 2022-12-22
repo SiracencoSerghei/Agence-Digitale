@@ -1,0 +1,31 @@
+.page-header {
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: #84A178;
+
+}
+
+.page-header__container {
+    display: grid;
+    @media screen and (max-width: 767px) {
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-columns: auto auto 184px;
+        padding-top: 20px;
+        padding-bottom: 16px;
+    }
+    @media screen and (min-width: 1200px) {
+        align-content: end;
+        grid-template-columns: auto auto auto;
+        padding-top: 8px;
+    }
+}
