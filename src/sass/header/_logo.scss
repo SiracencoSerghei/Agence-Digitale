@@ -1,0 +1,19 @@
+.logo {
+    display: inline-block;
+    width: 40px;
+    height: 37px;
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        height: 44px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        height: 65px;
+    }
+
+}
+.menu-cover__logo {
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
