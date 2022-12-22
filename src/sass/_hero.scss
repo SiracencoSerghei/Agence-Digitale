@@ -1,0 +1,107 @@
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
+}
+.hero {
+  background-color: #84a178;
+  background-image: url('../images/dots-mobile.svg');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 465px;
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/dots-tablet.svg');
+    height: 369px;
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/dots-desktop.svg');
+    height: 599px;
+  }
+  &__wrapper {
+    padding-top: 50px;
+    padding-left: 20px;
+    @media screen and (min-width: 768px) {
+      padding-top: 14px;
+      padding-left: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 45px;
+      padding-left: 16px;
+    }
+  }
+  &__title {
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.26;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fcfcfc;
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 38px;
+      margin-bottom: 28px;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 12px;
+    &__link {
+      font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 1.25;
+      &--bordered {
+        border: 2px solid #f8d24e;
+        border-radius: 8px;
+        color: #000000;
+        padding: 11px 26px;
+      }
+      &--underline {
+        text-decoration: underline;
+        color: #f8d24e;
+      }
+    }
+  }
+}
