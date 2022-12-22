@@ -1,0 +1,58 @@
+
+*,
+body {
+    @media screen and (min-width: 768px) {
+        cursor: url(../images/cursors/cursor.svg) 0 0, url(../images/cursors/cursor.svg) 32 32, auto;
+    }
+    
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Seymour One', sans-serif;
+}
+
+button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    cursor: inherit;
+  }
+
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    padding: 0;
+    margin: 0;
+    cursor: inherit;
+}
+
+ul, li {
+    list-style-type: none;
+    color: currentColor;
+    padding: 0;
+    margin: 0;
+    cursor: inherit;
+}
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    cursor: inherit;
+  }
+
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding: 0 16px;
+    }
+}
