@@ -44,16 +44,26 @@ a {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-  @media screen and (min-width: 767px) {
+  height: 465px;
+  @media screen and (min-width: 768px) {
     background-image: url('../images/dots-tablet.svg');
+    height: 369px;
   }
   @media screen and (min-width: 1200px) {
     background-image: url('../images/dots-desktop.svg');
+    height: 599px;
   }
   &__wrapper {
     padding-top: 50px;
-    padding-bottom: 256px;
     padding-left: 20px;
+    @media screen and (min-width: 768px) {
+      padding-top: 14px;
+      padding-left: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 45px;
+      padding-left: 16px;
+    }
   }
   &__title {
     font-family: 'Seymour One';
