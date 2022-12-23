@@ -1,0 +1,125 @@
+.slider {
+
+    padding-top: 178px;
+    padding-bottom: 393px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: rgba(132, 161, 120, 1);;
+    background-image: url('../images/backgroud_main@1x-mobile.png');
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .slider {
+                background-image:
+                    url('../images/backgroud_main@2x-mobile.png');
+            }
+        }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 283px;
+        padding-bottom: 379px;
+        padding-left: 31px;
+        padding-right: 31px;
+
+        .slider {
+        background-image:
+            url('../images/backgroud_main@1x-tablet.png');
+            }
+       
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .slider {
+                    background-image:
+                        url('../images/backgroud_main@2x-tablet.png');
+                }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 464px;
+        padding-bottom: 228px;
+        padding-left: 116px;
+        padding-right: 116px;
+
+        .slider {
+            background-image:
+                url('../images/backgroud_main@1x-desktop.png');
+        }
+
+         @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                .slider {
+                    background-image:
+                         url('../images/backgroud_main@2x-desktop.png');
+                }
+        }
+    }
+
+    &__photo {
+        border-radius: 50%;
+        margin-bottom: 32px;
+    }
+
+    &__review {
+        color: rgba(252, 252, 252, 1);
+        background-color: rgba(132, 161, 120, 1);
+        border-radius: 10px;
+    
+        font-size: 12px;
+        line-height: 2.5;
+        padding: 35px 39px;
+    
+        margin-bottom: 32px;
+    
+        margin-right: 6px;
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding: 28px 80px;
+        }
+
+        @media screen and (min-width: 1200px) {
+        padding: 42px 73px;
+        }
+    }
+
+    &__client {
+    
+        font-size: 20px;
+        line-height: 1.8;
+        color: rgba(19, 19, 19, 1);
+        
+        font-weight: 500;
+    
+        margin-bottom: 12px;
+    
+        @media screen and (min-width: 768px) {
+            margin-bottom: 32px;
+            font-size: 16px;
+        }
+    
+    }
+}
+
+.tns-inner {
+    text-align: center;
+}
+
+.tns-outer button {
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.tns-outer button.tns-nav-active {
+    background-color: rgba(132, 161, 120, 1);
+}
+
+.tns-nav {
+    text-align: center;
+}
