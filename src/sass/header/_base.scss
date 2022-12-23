@@ -1,10 +1,10 @@
-*,
-body {
-  @media screen and (min-width: 768px) {
-    cursor: url(../images/cursors/cursor.svg) 0 0,
-      url(../images/cursors/cursor.svg) 32 32, auto;
-  }
-}
+// *,
+// body {
+//   @media screen and (min-width: 768px) {
+//     cursor: url(../images/cursors/cursor.svg) 0 0,
+//       url(../images/cursors/cursor.svg) 32 32, auto;
+//   }
+// }
 
 body {
   padding: 0;
@@ -69,3 +69,32 @@ img {
     padding: 0 16px;
   }
 }
+
+// fonts
+$primary-font-family: ‘Montserrat’, sans-serif;
+$secondary-font-family: ‘Seymour One’, sans-serif;
+
+// colors
+
+$primary-text-color:#FCFCFC;
+$secondary-text-color:#131313;
+$link-text-color:#F8D24E; 
+$time-text-color: #ABABAB;
+$address-text-color: #D6936D;
+$ice-cream-bg-color:#AEC6A5;
+$ice-coffee-bg-color: #EFD478;
+
+
+
+// breakpoints
+
+$mobile: 480px;
+$pre-tablet: 767px;
+$tablet: 768px;
+$pre-desktop: 1199px;
+$desktop: 1200px;
+
+// animation
+
+$time-speed: 250ms;
+$time-function: cubic-bezier(0.4, 0, 0.2, 1);
