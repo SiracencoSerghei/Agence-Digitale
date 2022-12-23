@@ -1,4 +1,13 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
+@media screen and (min-width: 768px) {
+  *,
+body {
+    cursor: url(../images/cursors/cursor.svg) 0 0, url(../images/cursors/cursor.svg) 32 32, auto;
+  }
+}
+
+
 body {
   padding: 0;
   margin: 0;
@@ -590,6 +599,22 @@ img {
   }
 }
 
+
+.galery {
+  display: flex;
+  align-items: center;
+}
+
+.galery-container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-image: url(../images/optimized/backgroud_main@1x-mobile.png);
+}
 .backdrop {
   position: fixed;
   left: 0;
@@ -813,3 +838,4 @@ img {
 .tns-nav {
   text-align: center;
 }/*# sourceMappingURL=index.css.map */
+
