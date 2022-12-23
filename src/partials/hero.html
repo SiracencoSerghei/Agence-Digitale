@@ -19,6 +19,64 @@
             >
           </li>
         </ul>
+        <picture>
+          <source
+            srcset="
+              ./images/optimized/main_icecream@1x-desktop.png 1x,
+              ./images/optimized/main_icecream@2x-desktop.png 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/optimized/main_icecream@1x-tablet.png 1x,
+              ./images/optimized/main_icecream@2x-tablet.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/optimized/main_icecream@1x-mobile.png 1x,
+              ./images/optimized/main_icecream@2x-mobile.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/optimized/main_icecream@1x-desktop.png"
+            alt="Фото морозива"
+            class="hero__icecream"
+          />
+        </picture>
+        <div class="wrapper__textplate">
+          <picture>
+            <source
+              srcset="
+                ./images/optimized/icecream_plate@1x-desktop.png 1x,
+                ./images/optimized/icecream_plate@2x-desktop.png 2x
+              "
+              media="(min-width:1200px)"
+            />
+            <source
+              srcset="
+                ./images/optimized/icecream_plate@1x-tablet.png 1x,
+                ./images/optimized/icecream_plate@2x-tablet.png 2x
+              "
+              media="(min-width:768px)"
+            />
+            <img
+              src="./images/optimized/icecream_plate@1x-desktop.png"
+              alt="Тарелка з морозивом"
+              class="hero__plate"
+            />
+          </picture>
+          <div>
+            <p class="wrapper__textplate--title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et
+            </p>
+            <a href="#"></a>
+          </div>
+        </div>
       </div>
       <div class="hero__wrapper--right">
         <ul class="locations-count">

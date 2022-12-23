@@ -1,9 +1,11 @@
+
 @media screen and (min-width: 768px) {
   *,
 body {
     cursor: url(../images/cursors/cursor.svg) 0 0, url(../images/cursors/cursor.svg) 32 32, auto;
   }
 }
+
 
 body {
   padding: 0;
@@ -421,4 +423,6 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #131313;
+
 }
+
