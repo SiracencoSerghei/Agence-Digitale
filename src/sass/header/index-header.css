@@ -1,12 +1,3 @@
-
-@media screen and (min-width: 768px) {
-  *,
-body {
-    cursor: url(../images/cursors/cursor.svg) 0 0, url(../images/cursors/cursor.svg) 32 32, auto;
-  }
-}
-
-
 body {
   padding: 0;
   margin: 0;
@@ -61,6 +52,11 @@ img {
 .container {
   padding: 0 20px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
@@ -423,6 +419,4 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #131313;
-
-}
-
+}/*# sourceMappingURL=index-header.css.map */
