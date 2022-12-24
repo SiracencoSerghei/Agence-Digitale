@@ -9,42 +9,27 @@
    }
 }
 
-.contacts__container {
-   outline: 1px solid red;
-   padding-right: 20px;
-   padding-left: 20px;
-   margin-left: auto;
-   margin-right: auto;
+// .container {
+//    outline: 1px solid red;
+//    padding-right: 20px;
+//    padding-left: 20px;
+//    margin-left: auto;
+//    margin-right: auto;
 
-   @media screen and (min-width: 480px) {
-      width: 480px;
-   }
-   @media screen and (min-width: 768px) {
-      width: 768px;
-      padding-right: 32px;
-      padding-left: 32px;
-   }
-    @media screen and (min-width: 1200px) {
-      // width: 1200px;
-      padding-right: 16px;
-      padding-left: 16px;
-   }
-   }
-
-
-// .contacts__container{
-
-//    padding: 0 20px;
-//    margin: 0 auto;
+//    @media screen and (min-width: 480px) {
+//       width: 480px;
+//    }
 //    @media screen and (min-width: 768px) {
 //       width: 768px;
-//       padding: 0 32px;
+//       padding-right: 32px;
+//       padding-left: 32px;
 //    }
-//    @media screen and (min-width: 1200px) {
-//       width: 1200px;
-//       padding: 0 16px;
+//     @media screen and (min-width: 1200px) {
+//       // width: 1200px;
+//       padding-right: 16px;
+//       padding-left: 16px;
 //    }
-// }
+//    }
 
 .title-hiden{
    position: absolute;
@@ -62,9 +47,7 @@
 .contacts-wrapper{
    list-style: none;
 
-   // @media screen and (max-width: 767px) {
-   //    margin-bottom: 20px;
-   // }
+
    @media screen and (min-width: 768px) {
       display: flex;
       gap: 16px;
@@ -86,13 +69,7 @@
    border-radius: 24px;
    font-family: 'Montserrat';
    font-weight: 500;
-   // font-size: 12px;
 
-   // &__item:not(:last-child) {
-   //    @media screen and (max-width: 767px) {
-   //       margin-bottom: 16px;
-   //    }
-   // }
    @media screen and (min-width: 480px) {
       width: 440px;
    }
@@ -101,13 +78,11 @@
       padding-right: 24px;
       padding-left: 24px;
       padding-bottom: 40px;
-      // font-size: 14px;
    }
    @media screen and (min-width: 1200px) {
       width: 368px;
       padding-right: 40px;
       padding-left: 40px;
-      // font-size: 16px;
    }
 }
 
