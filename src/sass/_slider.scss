@@ -1,31 +1,115 @@
+.galery-container {
+    width: 320px;
+    max-width: 100%;
+    // height: 1037px;
+    display: flex;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        // height: 1017px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        padding-left: 94px;
+        padding-right: 94px;
+        // height: 1053px;
+    }
+}
+
+.galery-image {
+    transform: translateY(-32px);
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    top: 0;
+
+    @media screen and (min-width: 768px) {
+        transform: translateY(-144px);
+        border-radius: 18px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        border-radius: 24px;
+        transform: translateY(-98px);
+    }
+    
+    &__picture1 {
+        animation-delay: 0s;
+    }
+    &__picture2 {   
+        animation-delay: 3s;
+    }
+    &__picture3 {
+    animation-delay: 6s;
+    }
+    
+}
+
+@keyframes ice-cream {
+    0% {
+        opacity: 0;
+    }
+
+    11.11% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    44.44% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.galery-image__picture {
+    animation-name: ice-cream;
+        animation-duration: 9s;
+        animation-iteration-count: infinite; 
+}
+
+
 .slider {
 
-    padding-top: 178px;
+    // padding-top: 178px;
     padding-bottom: 393px;
-    padding-left: 20px;
-    padding-right: 20px;
+
 
     background-color: rgba(132, 161, 120, 1);;
-    background-image: url('../images/backgroud_main@1x-mobile.png');
+    background-image: url('../images/slider/Backgroud_mobile.jpg');
+
 
     @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .slider {
                 background-image:
-                    url('../images/backgroud_main@2x-mobile.png');
+                    url('../images/slider/Backgroud_mobile@2x.jpg');
             }
         }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-top: 283px;
+        // padding-top: 283px;
         padding-bottom: 379px;
-        padding-left: 31px;
-        padding-right: 31px;
 
         .slider {
         background-image:
-            url('../images/backgroud_main@1x-tablet.png');
+            url('../images/slider/Backgroud_tablet.jpg');
             }
        
         @media (min-device-pixel-ratio: 2),
@@ -33,20 +117,19 @@
             (min-resolution: 2dppx) {
                 .slider {
                     background-image:
-                        url('../images/backgroud_main@2x-tablet.png');
+                        url('../images/slider/Backgroud_tablet@2x.jpg');
                 }
         }
     }
 
     @media screen and (min-width: 1200px) {
-        padding-top: 464px;
+        // padding-top: 464px;
         padding-bottom: 228px;
-        padding-left: 116px;
-        padding-right: 116px;
+   
 
         .slider {
             background-image:
-                url('../images/backgroud_main@1x-desktop.png');
+                url('../images/slider/Backgroud_desctop.jpg');
         }
 
          @media (min-device-pixel-ratio: 2),
@@ -54,7 +137,7 @@
             (min-resolution: 2dppx) {
                 .slider {
                     background-image:
-                         url('../images/backgroud_main@2x-desktop.png');
+                         url('../images/slider/Backgroud_desctop@2x.jpg');
                 }
         }
     }
@@ -83,6 +166,9 @@
 
         @media screen and (min-width: 1200px) {
         padding: 42px 73px;
+        max-width: 968px;
+        margin-right: auto;
+        margin-left: auto;
         }
     }
 
@@ -108,6 +194,18 @@
     text-align: center;
 }
 
+.tns-outer {
+    margin-top: 178px;
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 283px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 464px;
+    }
+}
+
 .tns-outer button {
     margin-right: 10px;
     width: 12px;
@@ -123,3 +221,4 @@
 .tns-nav {
     text-align: center;
 }
+    
