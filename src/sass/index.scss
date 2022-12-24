@@ -1,3 +1,5 @@
+@import './utils/mixins';
+@import './utils/fonts';
 @import './common';
 @import './header/index-header.scss';
 @import './hero';
@@ -6,9 +8,8 @@
 @import './read-more-modal';
 @import './slider';
 
-
 // @import './galery';
 // @import './read-more-modal';
 @import './slider';
 // @import './franchise-modal';
-
+@import './buy-modal';
