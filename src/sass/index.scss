@@ -1,3 +1,4 @@
+
 @import './utils/mixins';
 @import './utils/fonts';
 @import './common';
@@ -8,8 +9,11 @@
 @import './read-more-modal';
 @import './slider';
 
-// @import './galery';
-// @import './read-more-modal';
+ @import './galery';
+ @import './read-more-modal';
 @import './slider';
-// @import './franchise-modal';
+ @import './franchise-modal';
 @import './buy-modal';
+@import './base/base.scss';
+@import './utils/utils.scss';
+@import './layout/layout.scss';
