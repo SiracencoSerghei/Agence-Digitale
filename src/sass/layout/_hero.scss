@@ -1,4 +1,3 @@
-
 // .container {
 //   margin-left: auto;
 //   margin-right: auto;
@@ -16,18 +15,18 @@
 // }
 
 .hero-container {
-  background-image: url('../images/dots-mobile.svg');
+  background-image: url('../images/hero/dots-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
   position: relative;
   height: 465px;
   @media screen and (min-width: 768px) {
-    background-image: url('../images/dots-tablet.svg');
+    background-image: url('../images/hero/dots-tablet.svg');
     height: 369px;
   }
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/dots-desktop.svg');
+    background-image: url('../images/hero/dots-desktop.svg');
     height: 599px;
   }
 }
@@ -67,15 +66,27 @@
       line-height: 1.41;
       font-size: 12px;
       padding-top: 15px;
-      /* or 20px */
-
       color: #fcfcfc;
+      margin-bottom: 2px;
       @media screen and (min-width: 1200px) {
-        width: 200px;
+        padding-top: 37px;
+        width: 225px;
         font-size: 14px;
         line-height: 1.66;
+        margin-bottom: 5px;
       }
     }
+  }
+}
+.arrow-link {
+  cursor: pointer;
+  &__icon {
+    fill: #fcfcfc;
+    transition: fill 250ms linear;
+  }
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: #f8d24e;
   }
 }
 
