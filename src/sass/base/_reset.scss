@@ -37,6 +37,17 @@ p {
   margin: 0;
   padding: 0;
 }
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+p::selection,
+span::selection,
+a::selection,
+li::selection {
+  background-color: #f8d24e;
+  color: #131313;
+}
 button {
   padding: 0;
   border: none;
