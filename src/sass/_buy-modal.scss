@@ -10,6 +10,11 @@
   margin: 0 auto;
   position: relative;
   height: 991px;
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    padding: 32px 54px;
+    height: 644px;
+  }
 }
 .buy-form {
   margin: 0;
@@ -17,6 +22,7 @@
   flex-direction: column;
   position: relative;
   align-items: center;
+  min-width: 100%;
 }
 .buy-icon {
   display: flex;
@@ -37,31 +43,24 @@
   @include modal-title(16px, calc(24 / 16));
   justify-content: center;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    @include modal-title(20px, calc(28 / 20));
+    margin-bottom: 40px;
+  }
+}
+.buy-cards {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 .buy-input.is-close {
   appearance: none;
   visibility: hidden;
   opacity: 0;
 }
-// .buy-list {
-//   margin-right: auto;
-//   margin-left: auto;
-//   top: 72px;
-// }
-// .buy-item {
-//   position: relative;
-//   width: 132px;
-//   justify-content: center;
-//   flex-direction: column;
-//   display: flex;
-//   top: 72px;
-//   &:not(:last-child) {
-//     margin-bottom: 91px;
-//   }
-//   &:last-child {
-//     margin-bottom: 32px;
-//   }
-// }
 .buy-wrapper {
   top: 62px;
   border-radius: 15px;
@@ -72,8 +71,10 @@
   z-index: 20;
   flex-direction: column;
   position: relative;
-  justify-content: space-evenly;
   max-width: 132px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
   &:hover,
   &:focus {
     border: none;
@@ -82,17 +83,22 @@
   &--green {
     border-color: #96af8c;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
+    align-self: flex-start;
   }
   &--yellow {
     border-color: #efd478;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
-    top: 124px;
+    @media screen and (max-width: 767.98px) {
+      top: 124px;
+    }
   }
   &--orange {
     border-color: #d6936d;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    margin-bottom: 32px;
-    top: 186px;
+    @media screen and (max-width: 767.98px) {
+      top: 186px;
+      margin-bottom: 32px;
+    }
   }
 }
 .buy-picture {
@@ -144,12 +150,18 @@
   position: absolute;
   position: relative;
   top: 186px;
+  @media screen and (min-width: 768px) {
+    top: 21px;
+    width: 368px;
+    bottom: 0;
+  }
   display: flex;
   flex-direction: column;
 }
 .buy-enter,
 .buy-comment {
   background-color: rgba(248, 210, 78, 0.1);
+  outline: none;
   border: 1px solid #84a178;
   border-radius: 10px;
   &::placeholder {
@@ -159,18 +171,22 @@
   }
 }
 .buy-enter {
-  margin-top: auto;
-  align-items: center;
   padding-right: 12px;
   padding-left: 12px;
   height: 32px;
   margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 .buy-comment {
   resize: none;
   padding: 8px 12px 0;
   height: 65px;
   width: 100%;
+  @media screen and (min-width: 768px) {
+    height: 84px;
+  }
 }
 .buy-button {
   margin-top: 26px;
@@ -190,63 +206,7 @@
   margin-right: auto;
   margin-left: auto;
   bottom: 0;
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+  }
 }
-// .buy-wrapper {
-//   position: absolute;
-//   row-gap: 20px;
-//   top: 72px;
-//   width: 132px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   border: 2px solid;
-//   position: relative;
-//   justify-content: center;
-//   border-radius: 15px;
-//   &--green {
-//     border-color: #96af8c;
-//   }
-//   &--yellow {
-//     border-color: #efd478;
-//   }
-//   &--orange {
-//     border-color: #d6936d;
-//   }
-// }
-// .buy-background {
-//   display: inherit;
-//   justify-content: center;
-//   left: 0;
-//   right: 0;
-//   margin-top: 20px;
-//   margin-bottom: 19px;
-//   width: 132px;
-//   border-radius: 50%;
-//   transform: translateY(-56px);
-//   &--green {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(156, 190, 143, 0.7),
-//         rgba(156, 190, 143, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
-//   }
-//   &--yellow {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(248, 210, 78, 0.7),
-//         rgba(248, 210, 78, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-//   }
-//   &--orange {
-//     background: linear-gradient(
-//         0deg,
-//         rgba(213, 117, 63, 0.7),
-//         rgba(213, 117, 63, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-//   }
-// }
