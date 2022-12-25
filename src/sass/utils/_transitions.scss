@@ -1,0 +1,7 @@
+a {
+  text-decoration: none;
+  transition-duration: 250ms;
+  transition-timing-function: $time-function;
+  transition-property: fill, color, background-color, transform, border-color,
+    letter-spacing;
+}

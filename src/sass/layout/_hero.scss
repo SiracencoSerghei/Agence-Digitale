@@ -63,8 +63,6 @@
         border-radius: 8px;
         color: #000000;
         padding: 11px 26px;
-        transition: transform 250ms $time-function,
-          border-color 250ms $time-function;
         &:hover {
           transform: scale(1.1);
           border-color: #0a8817;
@@ -79,8 +77,6 @@
       &--underline {
         text-decoration: underline;
         color: #f8d24e;
-        transition: color 250ms $time-function,
-          letter-spacing 250ms $time-function;
         &:hover {
           color: #0a8817;
           letter-spacing: 0.1em;
@@ -248,22 +244,22 @@
 @keyframes translatey {
   0% {
     transform: translateY(100%);
+    filter: blur(18px);
     opacity: 0;
   }
   100% {
     transform: translateY(0);
+    filter: blur(0px);
     opacity: 1;
   }
 }
 
 @keyframes focus-in {
   0% {
-    -webkit-filter: blur(12px);
     filter: blur(12px);
     opacity: 0;
   }
   100% {
-    -webkit-filter: blur(0px);
     filter: blur(0px);
     opacity: 1;
   }
