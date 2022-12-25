@@ -37,7 +37,6 @@
     
 }
 
-
   
 // ORDER BUTTON STYLE
 
@@ -63,32 +62,9 @@ height: 42px;
     margin: auto auto 64px auto; 
 }
 }
-.menu-order-button {
-    &:hover,
-    &:focus {
-        background: #0A8817;
-    }
-    &:focus {
-        color: #FFFFFF;
-    }
-    &:disabled {
-        background: #ABABAB;
-    }
-}
-
 .menu-order-button--mobile {
     @media screen and (min-width: 768px) {
         display: none;
-    }
-    &:hover {
-        background: #0A8817;
-    }
-    &:focus {
-        background: #0A8817;
-        color: #FFFFFF;
-    }
-    &:disabled {
-        background: #ABABAB;
     }
 }
 .menu-order-button--tablet {
@@ -98,16 +74,6 @@ height: 42px;
     
     justify-self: end;
     align-self: end;
-    &:hover {
-        background: #0A8817;
-    }
-    &:focus {
-        background: #0A8817;
-        color: #FFFFFF;
-    }
-    &:disabled {
-        background: #ABABAB;
-    }
 }
 
 // ORDER MENU CLOSE

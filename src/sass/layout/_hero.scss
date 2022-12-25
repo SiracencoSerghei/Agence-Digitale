@@ -3,14 +3,14 @@
   background-size: contain;
   height: 465px;
   overflow: hidden;
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 369px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     height: 599px;
   }
   &__wrapper--right {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: $pre-tablet) {
       display: none;
     }
   }
@@ -21,7 +21,7 @@
     line-height: 33px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #fcfcfc;
+    color: getcolor(primary-text-color);
     animation-name: focus-in;
     animation-duration: 1s;
     animation-iteration-count: 1;
@@ -31,7 +31,7 @@
       font-size: 34px;
       line-height: 96.5%;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       font-size: 38px;
       line-height: 1.26;
     }
@@ -41,10 +41,10 @@
     gap: 12px;
     margin-top: 32px;
     align-items: center;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $tablet) {
       margin-top: 24px;
     }
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       margin-top: 28px;
     }
     &__link {
@@ -54,7 +54,7 @@
       line-height: 1.25;
       display: block;
       cursor: pointer;
-      @media screen and (min-width: 1200px) {
+      @media screen and (min-width: $desktop) {
         font-size: 14px;
         line-height: 1.29;
       }
@@ -63,8 +63,6 @@
         border-radius: 8px;
         color: #000000;
         padding: 11px 26px;
-        transition: transform 250ms $time-function,
-          border-color 250ms $time-function;
         &:hover {
           transform: scale(1.1);
           border-color: #0a8817;
@@ -79,8 +77,6 @@
       &--underline {
         text-decoration: underline;
         color: #f8d24e;
-        transition: color 250ms $time-function,
-          letter-spacing 250ms $time-function;
         &:hover {
           color: #0a8817;
           letter-spacing: 0.1em;
@@ -232,39 +228,5 @@
         margin-bottom: 10px;
       }
     }
-  }
-}
-
-// animations
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes translatey {
-  0% {
-    transform: translateY(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes focus-in {
-  0% {
-    -webkit-filter: blur(12px);
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-filter: blur(0px);
-    filter: blur(0px);
-    opacity: 1;
   }
 }
