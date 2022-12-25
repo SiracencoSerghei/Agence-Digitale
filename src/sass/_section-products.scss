@@ -224,13 +224,11 @@
 
 
 
-.button {
-    display: inline-block;
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
-    width: 40px;
-    height: 16px;
+.products-list-button {
     margin-top: auto;
+    cursor: pointer;
+
+
 }
 
 .products-list__item--green::before {
