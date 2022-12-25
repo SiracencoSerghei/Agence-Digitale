@@ -13,7 +13,7 @@
   @media screen and (min-width: 768px) {
     width: 568px;
     padding: 32px 54px;
-    height: 644px;
+    height: 627px;
   }
 }
 .buy-form {
@@ -52,8 +52,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     margin-bottom: 40px;
+    width: 100%;
   }
 }
 .buy-input.is-close {
@@ -75,21 +75,25 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
   }
-  &:hover,
-  &:focus {
-    border: none;
-    background-color: #d6936d;
-  }
   &--green {
     border-color: #96af8c;
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
-    align-self: flex-start;
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: #96af8c;
+    }
   }
   &--yellow {
     border-color: #efd478;
     box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     @media screen and (max-width: 767.98px) {
       top: 124px;
+    }
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: #efd478;
     }
   }
   &--orange {
@@ -98,6 +102,11 @@
     @media screen and (max-width: 767.98px) {
       top: 186px;
       margin-bottom: 32px;
+    }
+    &:hover,
+    &:focus {
+      border: none;
+      background-color: #d6936d;
     }
   }
 }
@@ -150,13 +159,13 @@
   position: absolute;
   position: relative;
   top: 186px;
+  display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
     top: 21px;
     width: 368px;
     bottom: 0;
   }
-  display: flex;
-  flex-direction: column;
 }
 .buy-enter,
 .buy-comment {
