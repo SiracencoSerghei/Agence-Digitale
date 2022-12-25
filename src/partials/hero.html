@@ -9,7 +9,9 @@
         </h1>
         <ul class="hero-list">
           <li class="hero-list__item">
-            <a href="#" class="hero-list__link hero-list__link--bordered"
+            <a
+              href="#section-products"
+              class="hero-list__link hero-list__link--bordered"
               >Products</a
             >
           </li>
@@ -22,27 +24,27 @@
         <picture>
           <source
             srcset="
-              ./images/optimized/main_icecream@1x-desktop.png 1x,
-              ./images/optimized/main_icecream@2x-desktop.png 2x
+              ./images/hero/main_icecream@1x-desktop.png 1x,
+              ./images/hero/main_icecream@2x-desktop.png 2x
             "
             media="(min-width:1200px)"
           />
           <source
             srcset="
-              ./images/optimized/main_icecream@1x-tablet.png 1x,
-              ./images/optimized/main_icecream@2x-tablet.png 2x
+              ./images/hero/main_icecream@1x-tablet.png 1x,
+              ./images/hero/main_icecream@2x-tablet.png 2x
             "
             media="(min-width:768px)"
           />
           <source
             srcset="
-              ./images/optimized/main_icecream@1x-mobile.png 1x,
-              ./images/optimized/main_icecream@2x-mobile.png 2x
+              ./images/hero/main_icecream@1x-mobile.png 1x,
+              ./images/hero/main_icecream@2x-mobile.png 2x
             "
             media="(max-width:767px)"
           />
           <img
-            src="./images/optimized/main_icecream@1x-desktop.png"
+            src="./images/hero/main_icecream@1x-desktop.png"
             alt="Фото морозива"
             class="hero__icecream"
           />
@@ -51,20 +53,20 @@
           <picture>
             <source
               srcset="
-                ./images/optimized/icecream_plate@1x-desktop.png 1x,
-                ./images/optimized/icecream_plate@2x-desktop.png 2x
+                ./images/hero/icecream_plate@1x-desktop.png 1x,
+                ./images/hero/icecream_plate@2x-desktop.png 2x
               "
               media="(min-width:1200px)"
             />
             <source
               srcset="
-                ./images/optimized/icecream_plate@1x-tablet.png 1x,
-                ./images/optimized/icecream_plate@2x-tablet.png 2x
+                ./images/hero/icecream_plate@1x-tablet.png 1x,
+                ./images/hero/icecream_plate@2x-tablet.png 2x
               "
               media="(min-width:768px)"
             />
             <img
-              src="./images/optimized/icecream_plate@1x-desktop.png"
+              src="./images/hero/icecream_plate@1x-desktop.png"
               alt="Тарелка з морозивом"
               class="hero__plate"
             />
@@ -74,17 +76,36 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et
             </p>
-            <a href="#"></a>
+            <a href="#" class="arrow-link"
+              ><svg width="40px" height="40px" class="arrow-link__icon">
+                <use href="./images/sprite.svg#arrow"></use></svg
+            ></a>
           </div>
         </div>
       </div>
       <div class="hero__wrapper--right">
         <ul class="locations-count">
           <li class="locations-count__item">
-            <span class="locations-count__item--accent">16</span>cafes
+            <span
+              class="locations-count__item--accent locations-count-16"
+              data-counter-min="1"
+              data-counter-max="16"
+              data-counter-speed="90"
+              data-counter-increment="1"
+              data-counter-delay="10"
+              >16</span
+            >cafes
           </li>
           <li class="locations-count__item">
-            <span class="locations-count__item--accent">23</span>food trucks
+            <span
+              class="locations-count__item--accent locations-count-23"
+              data-counter-min="1"
+              data-counter-max="23"
+              data-counter-speed="70"
+              data-counter-increment="1"
+              data-counter-delay="10"
+              >23</span
+            >food trucks
           </li>
         </ul>
       </div>
