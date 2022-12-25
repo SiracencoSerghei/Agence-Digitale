@@ -230,37 +230,3 @@
     }
   }
 }
-
-// animations
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes translatey {
-  0% {
-    transform: translateY(100%);
-    filter: blur(18px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes focus-in {
-  0% {
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
-}

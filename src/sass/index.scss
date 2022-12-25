@@ -1,16 +1,4 @@
 @import './common';
 @import './base/base.scss';
 @import './utils/utils.scss';
-@import './layout/header/index-header.scss';
-@import './layout/hero';
-@import './layout/section-products';
-@import './layout/about';
-
-@import './layout/slider';
-@import './layout/section-contacts';
-@import './layout/footer';
-@import './layout/advantages';
-
-// @import './galery';
-@import './layout/modal/read-more-modal';
-@import './layout/modal/franchise-modal';
+@import './layout/layout.scss';
