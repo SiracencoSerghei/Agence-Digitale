@@ -4,12 +4,12 @@
 @import './section-products';
 @import './about';
 @import './read-more-modal';
+
 @import './slider';
 @import './section-contacts';
-@import"./layout/footer";
-@import"./advantages";
-
+@import './layout/footer';
+@import './advantages';
 
 // @import './galery';
-// @import './read-more-modal';
-// @import './franchise-modal';
+@import './modal/read-more-modal';
+@import './modal/franchise-modal';
