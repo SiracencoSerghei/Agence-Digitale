@@ -68,7 +68,7 @@
 }
 
 .section-products__titel {
-    font-family: "Seymour One", sans-serif;
+    font-family: 'Seymour One',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -94,6 +94,10 @@
 }
 
 .products-list {
+
+    &__icon {
+        transition: fill 250ms linear, transform 250ms $time-function;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         gap: 16px;
@@ -227,9 +231,17 @@
 .products-list-button {
     margin-top: auto;
     cursor: pointer;
+    
+    &:hover .products-list__icon,
+        &:focus .products-list__icon {
+            transform: scaleX(1.3);
+            fill: #ffff;
+        }
 
 
 }
+
+
 
 .products-list__item--green::before {
     content: "";
