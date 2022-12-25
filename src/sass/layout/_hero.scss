@@ -63,6 +63,9 @@
         border-radius: 8px;
         color: getcolor(secondary-text-color);
         padding: 11px 26px;
+        @media screen and (min-width: $desktop) {
+          padding: 12px 34px;
+        }
         &:hover {
           transform: scale(1.1);
           border-color: #0a8817;
