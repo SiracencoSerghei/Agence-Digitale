@@ -1,37 +1,18 @@
 .contacts {
-  // position: relative;
-  // outline: 1px solid red;
+  position: relative;
+  padding-top: 916px;
   background-color: #84a178;
   padding-bottom: 60px;
 
-  // height: 1095px;
   @media screen and (min-width: 768px) {
+    padding-top: 238px;
     padding-bottom: 40px;
-    // height: 360px;
   }
 
   @media screen and (min-width: 1200px) {
+    padding-top: 414px;
     padding-bottom: 120px;
-    // height: 636px;
-  }
-}
-
-.contacts__container {
-  padding: 0 20px;
-  margin: 0 auto;
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    padding: 0 32px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-    padding: 0 16px;
+    //  padding-bottom: 60px; якщо в футері залишити padding-top: 60px;
   }
 }
 
@@ -50,18 +31,23 @@
 
 // контейнер карток
 .contacts-wrapper {
+  position: absolute;
+  top: -353px;
   list-style: none;
-  // transform: translateY(-352px);
-  // position: absolute;
+  @media screen and (max-width: 479px) {
+    width: calc(100% - 2 * 20px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 768px) {
-    // transform: translateY(-300px);
+    top: -300px;
     display: flex;
     gap: 16px;
   }
 
   @media screen and (min-width: 1200px) {
-    // transform: translateY(-128px);
+    top: -128px;
     gap: 32px;
   }
 }
@@ -78,20 +64,27 @@
   border-radius: 24px;
   font-family: 'Montserrat';
   font-weight: 500;
+  height: 412px;
+
+  // @media screen and (max-width: 479px) {
+  //    // width: calc(100% - 20px);
+  // }
 
   @media screen and (min-width: 480px) {
-    // width: 450px;
     width: 440px;
   }
 
   @media screen and (min-width: 768px) {
     width: 224px;
+    height: 537px;
+
     padding-right: 24px;
     padding-left: 24px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 368px;
+    height: 542px;
     padding-right: 40px;
     padding-left: 40px;
   }
@@ -195,15 +188,9 @@
   }
 }
 
-// .schedule-list__item{
-//    outline: 1px solid tomato;
-// }
-
 .schedule-list__item:not(:last-child) {
   margin-bottom: 8px;
 }
-
-// .schedule-list__day{}
 
 .schedule-list__time {
   color: #ababab;
@@ -233,9 +220,6 @@
   margin-bottom: 8px;
 }
 
-// .contacts-list__link{
-// }
-
 .button-list {
   display: flex;
   align-items: center;
@@ -243,17 +227,14 @@
   flex-direction: column;
   gap: 16px;
   margin-top: 20px;
-  // margin-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     margin-top: 40px;
-    // margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 60px;
-    // margin-bottom: 120px;
   }
 }
 
@@ -272,7 +253,7 @@
 
   width: 196px;
   height: 42px;
-  // cursor: pointer;
+  cursor: pointer;
 
   color: #000000;
   border-radius: 10px;
@@ -323,4 +304,14 @@
       fill: #ffffff;
     }
   }
+}
+
+// стилі для кнопок для disabled
+.contacts__button-locations-disabled {
+  background-color: #ababab;
+  border: 2px solid #ababab;
+}
+
+.contacts__button-franchise-disabled {
+  border: 2px solid #ababab;
 }
