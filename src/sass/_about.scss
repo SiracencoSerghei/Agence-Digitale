@@ -1,8 +1,8 @@
 .about{
     background-color: #84A178;
     padding-top: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    // padding-left: 50px;
+    // padding-right: 50px;
     text-align: center;
     justify-content: right;
     color: #FCFCFC;
@@ -58,8 +58,8 @@
     @media screen and (min-width: 768px){
     text-align: left;
     max-width: 336px;
-    margin-left: 400px;
-    margin-right: 32px;
+    margin-left: 350px;
+    // margin-right: 32px;
     }
     @media screen and (min-width: 1200px){
     max-width: 463px;
@@ -95,23 +95,48 @@ margin-bottom: 10px;
     }
 }
 .about__button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 164px;
     height: 42px;
-    margin-bottom: 50px;
+    margin-bottom: 116px;
 
     font-weight: 600;
     font-size: 14px;
     line-height: calc(18/14);
     color: #000000;
 
-    background: #F8D24E;
+    background-color: #F8D24E;
     border-radius: 10px;
     @media screen and (min-width: 768px){
-        margin-left: 252px;
+        margin-left: 180px;
+        margin-bottom: 162px;
     }
     @media screen and (min-width: 1200px){
         margin-left: 200px;
+        margin-bottom: 236px;
     }
+    &:hover{
+      background-color: #0A8817;
+    }
+    &:focus{
+        background-color: #0A8817;
+        color: #FCFCFC;
+
+;
+    }
+}
+.icon-menu {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    fill: currentColor;
+    margin: auto;
+
+}
+.about__button-icon{
+    margin-left: 4px;
 }
 .about-desription__text:first-child::before{
     content: "";
@@ -131,7 +156,7 @@ margin-bottom: 10px;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50% bottom;
-    @media screen and (min-device-pixel-ratio: 2),
+    @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: url(../images/about/bull@2x-mobile.png);
@@ -148,7 +173,7 @@ margin-bottom: 10px;
         background-position: 50% bottom;
         background-repeat: no-repeat;
         background-size: contain;
-        @media screen and (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url(../images/about/bull@2x-tablet.png);
@@ -158,7 +183,7 @@ margin-bottom: 10px;
 @media screen and (min-width: 1200px) {
         width: 490px;
         height: 529px;
-        transform: translate(-850px, 220px);
+        transform: translate(-835px, 220px);
         
     // background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
     //     box-shadow: 0px 5.30813px 19.9055px rgba(153, 114, 23, 0.25);
@@ -167,7 +192,7 @@ margin-bottom: 10px;
         background-position: 50% bottom;
         background-repeat: no-repeat;
         background-size: contain;
-        @media screen and (min-device-pixel-ratio: 2),
+        @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         background-image: url(../images/about/bull@2x-desktop.png);
