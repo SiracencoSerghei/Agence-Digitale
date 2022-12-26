@@ -1,93 +1,181 @@
-<div class="backdrop-menu-order is-hidden-menu-order" data-menu-order>
-  <div class="buy-container">
-    <button type="submit" class="buy-icon" data-menu-order-close>
-      <svg aria-label="modal-close" viewBox="0 0 32 32" width="24" height="24">
+<div class="backdrop is-hidde" id="buy-now-modal">
+  <div class="modal-buy">
+    <button type="button" class="modal-buy__close">
+      <svg width="24" height="23" class="close-icon">
         <use href="./images/sprite.svg#close"></use>
       </svg>
     </button>
-    <h2 id="buy-title" class="buy-title">Buy now</h2>
-    <form class="buy-form">
-      <div class="buy-cards">
-        <input
-          type="checkbox"
-          name="option"
-          value="ice-cream"
-          class="buy-input is-close"
-        />
-        <div class="buy-wrapper buy-wrapper--green">
-          <div class="buy-picture buy-picture--green">
-            <img
-              src="./images/buy-now/option1@1x-modal.jpg"
-              srcset="
-                ./images/buy-now/option1@1x-modal.jpg 132w,
-                ./images/buy-now/option1@2x-modal.jpg 264w
+    <form class="form">
+      <h2 class="form__title">Buy Now</h2>
+      <ul class="form-list">
+        <li class="form-list__item form-list__item--green">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox-g"
+            class="checkbox-g"
+          />
+          <label for="checkbox-g" class="buy-now__text checkbox checkbox-green">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-desktop.webp 1x,
+                  ./images/buy-now/icecream@2x-desktop.webp 2x
+                "
+                type="webp"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-tablet.webp 1x,
+                  ./images/buy-now/icecream@2x-tablet.webp 2x
+                "
+                type="webp"
+                media="(min-width:768)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-mobile.webp 1x,
+                  ./images/buy-now/icecream@2x-mobile.webp 2x
+                "
+                type="webp"
+                media="(max-width:767px)"
+              />
+              <img
+                class="checkbox-img"
+                src="./images/buy-now/icecream@1x-desktop.jpg"
+                alt=""
+                width="132px
               "
-              alt="option1"
-              class="buy-image"
-              sizes="132px, 100vw"
-            />
-          </div>
-          <strong class="buy-product">ice cream</strong>
-        </div>
-        <input
-          type="checkbox"
-          name="option"
-          value="ice-coffee"
-          checked
-          class="buy-input is-close"
-        />
-        <div class="buy-wrapper buy-wrapper--yellow">
-          <div class="buy-picture buy-picture--yellow">
-            <img
-              src="./images/buy-now/option2@1x-modal.jpg"
-              srcset="
-                ./images/buy-now/option2@1x-modal.jpg 132w,
-                ./images/buy-now/option2@2x-modal.jpg 264w
+              />
+            </picture>
+            <p class="buy-now__text">Ice Cream</p>
+          </label>
+        </li>
+        <li class="form-list__item form-list__item--yellow">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox-y"
+            class="checkbox-y"
+          />
+          <label
+            for="checkbox-y"
+            class="buy-now__text checkbox checkbox-yellow"
+          >
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now/coffee@1x-desktop.webp 1x,
+                  ./images/buy-now/coffee@2x-desktop.webp 2x
+                "
+                type="webp"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/coffee@1x-tablet.webp 1x,
+                  ./images/buy-now/coffee@2x-tablet.webp 2x
+                "
+                type="webp"
+                media="(min-width:768)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/coffee@1x-mobile.webp 1x,
+                  ./images/buy-now/coffee@2x-mobile.webp 2x
+                "
+                type="webp"
+                media="(max-width:767px)"
+              />
+              <img
+                class="checkbox-img"
+                src="./images/buy-now/coffee@1x-desktop.jpg"
+                alt="Кофе"
+                width="132px
               "
-              alt="option2"
-              class="buy-image"
-              sizes="132px, 100vw"
-            />
-          </div>
-          <strong class="buy-product">ice coffee</strong>
-        </div>
-        <input
-          type="checkbox"
-          name="option"
-          value="milkshake"
-          class="buy-input is-close"
-        />
-        <div class="buy-wrapper buy-wrapper--orange">
-          <div class="buy-picture buy-picture--orange">
-            <img
-              src="./images/buy-now/option3@1x-modal.jpg"
-              srcset="
-                ./images/buy-now/option3@1x-modal.jpg 132w,
-                ./images/buy-now/option3@2x-modal.jpg 264w
+              />
+            </picture>
+            <p class="buy-now__text">Ice Coffee</p>
+          </label>
+        </li>
+        <li class="form-list__item form-list__item--brown">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checbox-b"
+            class="checkbox-b"
+          />
+          <label for="checbox-b" class="buy-now__text checkbox checkbox-brown">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now/milkshake@1x-desktop.webp 1x,
+                  ./images/buy-now/milkshake@2x-desktop.webp 2x
+                "
+                type="webp"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/milkshake@1x-tablet.webp 1x,
+                  ./images/buy-now/milkshake@2x-tablet.webp 2x
+                "
+                type="webp"
+                media="(min-width:768)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/milkshake@1x-mobile.webp 1x,
+                  ./images/buy-now/milkshake@2x-mobile.webp 2x
+                "
+                type="webp"
+                media="(max-width:767px)"
+              />
+              <img
+                class="checkbox-img"
+                src="./images/buy-now/milkshake@1x-desktop.jpg"
+                alt=""
+                width="132px
+              
               "
-              sizes="132px, 100vw"
-              alt="option3"
-              class="buy-image"
-            />
-          </div>
-          <strong class="buy-product">milkshake</strong>
-        </div>
-      </div>
-      <div class="buy-bottom">
+              />
+            </picture>
+            <p class="buy-now__text">milkshake</p>
+          </label>
+        </li>
+      </ul>
+      <div class="modal-buy__wrapper">
         <input
           type="text"
-          class="buy-enter"
-          name="your-name"
+          name="name"
+          class="modal-buy__input"
+          autofocus
+          required
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          title="Username must be two words separated by space."
           placeholder="Name"
         />
-        <input type="tel" class="buy-enter" name="your-tel" placeholder="Phone" />
+
+        <input
+          type="tel"
+          name="tel"
+          class="modal-buy__input"
+          placeholder="Phone"
+          required
+          pattern="[0-9] {9,12}"
+          title="Phone number must consist of numbers from 0 to 9"
+        />
         <textarea
-          class="buy-comment"
-          name="your-comment"
+          name="coment"
+          cols="30"
+          rows="7"
+          class="modal-buy__textarea"
           placeholder="Comment"
         ></textarea>
-        <button type="submit" class="buy-button">Submit</button>
       </div>
+
+      <button type="submit" class="modal__form-button">Submit</button>
     </form>
   </div>
 </div>
