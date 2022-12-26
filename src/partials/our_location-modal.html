@@ -5,12 +5,14 @@
       class="modal-franchise__button"
       data-modal-id="location-modal"
     >
-      <img
-        src="./images/mobile_modal-close.svg"
-        alt=""
-        width="24"
-        height="24"
-      />
+      <svg 
+      aria-label="modal-close" 
+      viewBox="0 0 32 32" 
+      width="24"
+      height="24">
+      <use href="./images/sprite.svg#close">
+      </use>
+    </svg>
     </button>
     <h2 class="modal-franchise__title">
       Our Locations
@@ -32,7 +34,7 @@
         </picture>
     </form>
     <form action="https://www.google.com/maps" target="_blank">
-   <button type="submit" class="modal__form-button">Submit</button>
+   <button type="submit" class="modal__form-button">Open map</button>
   </form>
   </div>
 </div>
