@@ -1,0 +1,103 @@
+<div class="backdrop-buy">
+  <div class="modal-buy">
+    <button type="button" class="modal-buy__close">
+      <svg width="24" height="23">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <form class="form">
+      <h2 class="form__title">Buy Now</h2>
+      <ul class="form-list">
+        <li class="form-list__item">
+          <input
+            type="checkbox"
+            name=""
+            id="checkbox-g"
+            class="form-list__check"
+          />
+          <label for="checkbox-g" class="form-list__label">
+            <picture>
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-desktop.webp 1x,
+                  ./images/buy-now/icecream@2x-desktop.webp 2x
+                "
+                type="webp"
+                media="(min-width:1200px)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-tablet.webp 1x,
+                  ./images/buy-now/icecream@2x-tablet.webp 2x
+                "
+                type="webp"
+                media="(min-width:768)"
+              />
+              <source
+                srcset="
+                  ./images/buy-now/icecream@1x-mobile.webp 1x,
+                  ./images/buy-now/icecream@2x-mobile.webp 2x
+                "
+                type="webp"
+                media="(max-width:767px)"
+              />
+              <img
+                src="./images/buy-now/icecream@1x-desktop.jpg"
+                alt=""
+                width="132px
+              "
+              />
+            </picture>
+          </label>
+        </li>
+        <li class="form-list__item">
+          <input
+            type="checkbox"
+            name=""
+            id="checkbox-y"
+            class="form-list__check"
+          />
+          <label for="checkbox-y" class="form-list__label"></label>
+        </li>
+        <li class="form-list__item">
+          <input
+            type="checkbox"
+            name=""
+            id="checbox-b"
+            class="form-list__check"
+          />
+          <label for="checbox-b" class="form-list__label"></label>
+        </li>
+      </ul>
+      <input
+        type="text"
+        name="name"
+        class="modal-franchise__form-input"
+        autofocus
+        required
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        title="Username must be two words separated by space."
+        placeholder="Name"
+      />
+
+      <input
+        type="tel"
+        name="tel"
+        class="modal-franchise__form-input"
+        placeholder="Phone"
+        required
+        pattern="[0-9] {9,12}"
+        title="Phone number must consist of numbers from 0 to 9"
+      />
+      <textarea
+        name="coment"
+        cols="30"
+        rows="7"
+        class="modal-franchise__form-textarea"
+        placeholder="Comment"
+      ></textarea>
+
+      <button type="submit" class="modal__form-button">Submit</button>
+    </form>
+  </div>
+</div>
