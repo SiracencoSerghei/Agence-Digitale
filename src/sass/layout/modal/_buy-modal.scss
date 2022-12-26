@@ -1,6 +1,7 @@
 .buy-backdrop {
   transform: translateX(100vw);
   display: none;
+  position: fixed;
 }
 .buy-container {
   display: flex;
@@ -58,6 +59,7 @@ label {
 .buy-cards {
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-basis: calc((100% - 2 * 32px) / 3);
     justify-content: space-between;
     margin-bottom: 40px;
     width: 100%;
