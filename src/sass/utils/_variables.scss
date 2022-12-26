@@ -11,6 +11,7 @@ $colors: (
   'address-text-color': #d6936d,
   'ice-cream-bg-color': #aec6a5,
   'ice-coffee-bg-color': #efd478,
+  'modal-backdrop-bg-color': #817c7c,
 );
 // чтобы использовать цвет - после свойства пишем getcolor(нужный цвет (только те, которые есть в COLORS. При надобности добавьте свои))
 @function getcolor($key) {
