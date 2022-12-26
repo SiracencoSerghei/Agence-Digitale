@@ -137,3 +137,9 @@
         padding-bottom: 13px;
     }
 }
+.nav__item {
+    &:hover,
+    &:focus {
+        color: #F8D24E;
+    }
+}

@@ -75,6 +75,31 @@ height: 42px;
     justify-self: end;
     align-self: end;
 }
+.menu-order-button {
+    &:hover {
+        background-color: #0A8817;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: FFFFFF;
+    }
+    &:disabled {
+        background-color: #ABABAB;
+    }
+}
+.menu-order-button--mobile,
+.menu-order-button--tablet {
+    &:hover {
+        background-color: #0A8817;
+    }
+    &:focus {
+        background-color: #0A8817;
+        color: FFFFFF;
+    }
+    &:disabled {
+        background-color: #ABABAB;
+    }
+}
 
 // ORDER MENU CLOSE
 

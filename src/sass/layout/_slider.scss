@@ -29,7 +29,7 @@ top: -32px;
         }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        // padding-top: 283px;
+   
         padding-bottom: 379px;
 
         .slider {
@@ -117,18 +117,6 @@ top: -32px;
 
 .tns-inner {
     text-align: center;
-}
-
-.slider__card {
-    margin-top: 80px;
-    
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-top: 100px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        margin-top: 140px;
-    }
 }
 
 .tns-outer button {
