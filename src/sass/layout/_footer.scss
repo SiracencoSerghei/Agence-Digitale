@@ -149,16 +149,31 @@
                 font-size: 16px;
                 letter-spacing: 0.02em;
             }
-            }
-   .contacts__text{
+}
+   .contacts__text {
     font-weight: 700;
     line-height: 1.86;
     text-align: right;
     color: #131313;
-   }
-   .contacts__text--white{
-   color: #FCFCFC;
-   }
+}
+   .contacts__text--white {
+   
+    color: #FCFCFC;
+    @media screen and (max-width:767px) {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        letter-spacing: 0.02em;
+    }
+}
+
    .footer-copyright {
        border-top: 1px solid #E1E1E1;
 
