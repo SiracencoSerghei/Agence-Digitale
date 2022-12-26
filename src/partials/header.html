@@ -1,104 +1,194 @@
 <header class="page-header" data-header id="home">
   <div class="container page-header__container">
-      <a class="logo page-header__logo" href="#">
-          <picture>
+    <a class="logo page-header__logo" href="#">
+      <picture>
+        <!-- Desktop screen -->
+        <source
+          media="(min-width: 1200px)"
+          srcset="./images/logo/logo_d.png 1x, ./images/logo/logo_d@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./images/logo/logo_t.png 1x, ./images/logo/logo_t@2x.png 2x"
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="./images/logo/logo_m.png 1x, ./images/logo/logo_m@2x.png 2x"
+          type="image/png"
+        />
+        <img class="logo__icon" src="./images/logo/logo_m.png" alt="logo" />
+      </picture>
+    </a>
+
+    <button
+      type="button"
+      class="page-header__menu-button js-open-menu"
+      aria-expanded="false"
+      aria-controls="menu-container"
+    >
+      <svg
+        class="icon-menu"
+        aria-label="Mobile menu jumper"
+        viewBox="0 0 32 32"
+      >
+        <use
+          class="icon-menu"
+          href="./images/header-menu/symbol-defs.svg#icon-menu"
+        ></use>
+      </svg>
+    </button>
+
+    <div
+      class="menu-container page-header__menu-container js-menu-container"
+      id="mobile-menu"
+    >
+      <div class="menu-container__modal">
+        <div class="page-header__menu-cover">
+          <a class="logo page-header__logo menu-cover__logo" href="#">
+            <picture>
               <!-- Desktop screen -->
-              <source media="(min-width: 1200px)"
-                  srcset="./images/logo/logo_d.png 1x, ./images/logo/logo_d@2x.png 2x" type="image/png" />
-              <source media="(min-width: 768px)"
-                  srcset="./images/logo/logo_t.png 1x, ./images/logo/logo_t@2x.png 2x" type="image/png" />
-              <source media="(max-width: 767px)"
-                  srcset="./images/logo/logo_m.png 1x, ./images/logo/logo_m@2x.png 2x" type="image/png" />
-              <img class="logo__icon" src="./images/logo/logo_m.png" alt="logo">
-          </picture>
-      </a>
-
-      <button type="button" class="page-header__menu-button js-open-menu" aria-expanded="false"
-          aria-controls="menu-container">
-          <svg class="icon-menu" aria-label="Mobile menu jumper" viewBox="0 0 32 32">
-              <use class="icon-menu" href="./images/header-menu/symbol-defs.svg#icon-menu"></use>
-          </svg>
-      </button>
-
-      <div class="menu-container  page-header__menu-container js-menu-container" id="mobile-menu">
-          <div class="menu-container__modal">
-              <div class="page-header__menu-cover">
-                  <a class="logo page-header__logo menu-cover__logo" href="#">
-                      <picture>
-                          <!-- Desktop screen -->
-                          <source media="(min-width: 1200px)"
-                              srcset="./images/logo/logo_d.png 1x, ./images/logo/logo_d@2x.png 2x"
-                              type="image/png" />
-                          <source media="(min-width: 768px)"
-                              srcset="./images/logo/logo_t.png 1x, ./images/logo/logo_t@2x.png 2x"
-                              type="image/png" />
-                          <source media="(max-width: 767px)"
-                              srcset="./images/logo/logo_m.png 1x, ./images/logo/logo_m@2x.png 2x"
-                              type="image/png" />
-                          <img class="logo__icon" src="./images/logo/logo_m.png" alt="logo">
-                      </picture>
-                  </a>
-                  <button class="page-header__menu-button js-close-menu">
-                      <svg class="icon-menu" aria-label="Mobile menu jumper" viewBox="0 0 32 32">
-                          <use class="icon-menu" href="./images/header-menu/symbol-defs.svg#icon-close"></use>
-                      </svg>
-                  </button>
-              </div>
-              <div class="page-header__menu-mobile">
-                  <div class="page-header__menu-tablet">
-                      <nav class="nav page-header__nav">
-                          <ul class="nav__list">
-                              <li class="nav__item"><a href="#home">Home</a></li>
-                              <li class="nav__item"><a href="#how_its_made">How it’s made?</a></li>
-                              <li class="nav__item"><a href="#our_products">Our products</a></li>
-                              <li class="nav__item"><a href="#contact">Contact</a></li>
-                          </ul>
-                      </nav>
-                  </div>
-                  <button class="menu-order-button menu-order-button--mobile" type="button" data-menu-order-open>Buy
-                      now
-                      <svg class="icon-menu--order" width="12" height="12" aria-label="Перемикач мобільного меню">
-                          <use class="icon-menu" href="./images/header-menu/symbol-defs.svg#icon-right-bold">
-                          </use>
-                      </svg>
-                  </button>
-              </div>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/logo/logo_d.png    1x,
+                  ./images/logo/logo_d@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/logo/logo_t.png    1x,
+                  ./images/logo/logo_t@2x.png 2x
+                "
+                type="image/png"
+              />
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./images/logo/logo_m.png    1x,
+                  ./images/logo/logo_m@2x.png 2x
+                "
+                type="image/png"
+              />
+              <img
+                class="logo__icon"
+                src="./images/logo/logo_m.png"
+                alt="logo"
+              />
+            </picture>
+          </a>
+          <button class="page-header__menu-button js-close-menu">
+            <svg
+              class="icon-menu"
+              aria-label="Mobile menu jumper"
+              viewBox="0 0 32 32"
+            >
+              <use
+                class="icon-menu"
+                href="./images/header-menu/symbol-defs.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="page-header__menu-mobile">
+          <div class="page-header__menu-tablet">
+            <nav class="nav page-header__nav">
+              <ul class="nav__list">
+                <li class="nav__item"><a href="#home">Home</a></li>
+                <li class="nav__item">
+                  <a href="#how_its_made">How it’s made?</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#our_products">Our products</a>
+                </li>
+                <li class="nav__item"><a href="#contact">Contact</a></li>
+              </ul>
+            </nav>
           </div>
+          <button
+            class="menu-order-button menu-order-button--mobile"
+            type="button"
+            data-menu-order-open
+          >
+            Buy now
+            <svg
+              class="icon-menu--order"
+              width="12"
+              height="12"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use
+                class="icon-menu"
+                href="./images/header-menu/symbol-defs.svg#icon-right-bold"
+              ></use>
+            </svg>
+          </button>
+        </div>
       </div>
-      <button class="menu-order-button menu-order-button--tablet new-btn-menu-order" type="button">Buy now
-          <svg class="icon-menu--order" width="12" height="12" aria-label="Перемикач мобільного меню">
-              <use class="icon-menu" href="./images/header-menu/symbol-defs.svg#icon-right-bold"></use>
-          </svg>
-      </button>
+    </div>
+    <button
+      class="menu-order-button menu-order-button--tablet new-btn-menu-order"
+      type="button"
+    >
+      Buy now
+      <svg
+        class="icon-menu--order"
+        width="12"
+        height="12"
+        aria-label="Перемикач мобільного меню"
+      >
+        <use
+          class="icon-menu"
+          href="./images/header-menu/symbol-defs.svg#icon-right-bold"
+        ></use>
+      </svg>
+    </button>
 
-      <div class="backdrop-menu-order is-hidden-menu-order" data-menu-order>
-          <div class="backdrop-menu-order__modal modal-menu-order">
-              <div class="modal__action-close">
-                  <button class="modal-menu-order__menu-button" type="button" data-menu-order-close
-                      aria-label="modal-order-close">
-                      <svg class="icon-order-close" aria-label="Mobile menu jumper" viewBox="0 0 32 32">
-                          <use class="icon-menu" href="./images/header-menu/symbol-defs.svg#icon-close"></use>
-                      </svg>
-                  </button>
-              </div>
-              <form class="form-order-buy-now" name="order-buy-now" action="#" autocomplete="off">
-                  <ul>
-                      <li>
-                          
-                      </li>
-                      <li>
+    <div class="backdrop-menu-order is-hidden-menu-order" data-menu-order>
+      <div class="backdrop-menu-order__modal modal-menu-order">
+        <div class="modal__action-close">
+          <button
+            class="modal-menu-order__menu-button"
+            type="button"
+            data-menu-order-close
+            aria-label="modal-order-close"
+          >
+            <svg
+              class="icon-order-close"
+              aria-label="Mobile menu jumper"
+              viewBox="0 0 32 32"
+            >
+              <use
+                class="icon-menu"
+                href="./images/header-menu/symbol-defs.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <form
+          class="form-order-buy-now"
+          name="order-buy-now"
+          action="#"
+          autocomplete="off"
+        >
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
 
-                      </li>
-                      <li>
-
-                      </li>
-                  </ul>
-
-
-                  <button class="menu-order-buy-now__submit-button" type="submit" aria-label="modal-order-submit">Відправити</button>
-              </form>
-          </div>
+          <button
+            class="menu-order-buy-now__submit-button"
+            type="submit"
+            aria-label="modal-order-submit"
+          >
+            Відправити
+          </button>
+        </form>
       </div>
+    </div>
   </div>
 </header>
-  

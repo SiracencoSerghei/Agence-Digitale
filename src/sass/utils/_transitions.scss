@@ -5,6 +5,12 @@ a {
   transition-property: fill, color, background-color, transform, border-color,
     letter-spacing;
 }
+
+button {
+  transition-duration: 250ms;
+  transition-timing-function: $time-function;
+  transition-property: color, background-color, box-shadow, fill, transform;
+}
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
