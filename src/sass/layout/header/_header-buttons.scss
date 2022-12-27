@@ -5,7 +5,7 @@
     width: 32px;
     height: 32px;
     & .icon-menu {
-        fill: #FFFFFF;
+        fill: getcolor(modal-bg-color);
     }
     
     @media screen and (max-width: 767px) {
@@ -18,6 +18,14 @@
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+.page-header__menu-button {
+    & .icon-menu {
+    &:hover,
+    &:focus {
+        fill: getcolor(accent);
+    }
+}
 }
 
 .icon-menu {
@@ -55,7 +63,7 @@ text-align: center;
 justify-content: center;
 
 color: #000000;
-background: #F8D24E;
+background: getcolor(accent);
 border-radius: 10px;
 width: 152px;
 height: 42px;
@@ -78,38 +86,28 @@ height: 42px;
     justify-self: end;
     align-self: end;
 }
-.menu-order-button {
-    &:hover {
-        background-color: #0A8817;
-    }
-    &:focus {
-        background-color: #0A8817;
-        color: FFFFFF;
-    }
-    &:disabled {
-        background-color: #ABABAB;
-    }
-}
+.menu-order-button,
 .menu-order-button--mobile,
-.menu-order-button--tablet {
+.menu-order-button--tablet  {
     &:hover {
-        background-color: #0A8817;
+        background-color: getcolor(button-hover-color);
     }
     &:focus {
-        background-color: #0A8817;
-        color: FFFFFF;
+        background-color: getcolor(button-hover-color);
+        color: getcolor(modal-bg-color);
     }
     &:disabled {
-        background-color: #ABABAB;
+        background-color: getcolor(button-disabled-color);
     }
 }
+
 
 // ORDER MENU CLOSE
 
 .modal-menu-order__menu-button {
     width: 32px;
     height: 32px;
-fill: #131313;
+fill: getcolor(secondary-text-color);
 }
 .menu-order-buy-now__submit-button {
     font-family: 'Montserrat';
@@ -118,5 +116,5 @@ font-weight: 600;
 font-size: 12px;
 line-height: 15px;
 
-color: #131313;
+color: getcolor(secondary-text-color);
 }
