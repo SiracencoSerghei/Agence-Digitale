@@ -1,7 +1,4 @@
 .backdrop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,22 +8,27 @@
   opacity: 1;
   overflow-y: scroll;
   transition: opacity 390ms $time-function;
-  background-color: grey;
+  background-color: getcolor(modal-backdrop-bg-color);
   &.is-hidden {
+    transition: opacity 390ms $time-function;
     opacity: 0;
     pointer-events: none;
   }
-  &.is-hidden .modal-buy,
-  .modal-location,
-  .modal {
-    transform: scale(0.9);
-    transition: transform 550ms $time-function;
-  }
-  .modal-buy,
-  .modal-location,
-  .modal {
-    transform: scale(1);
-    transition: 550ms $time-function;
-  }
+}
+.backdrop.is-hidden .modal-buy,
+.backdrop.is-hidden .modal-location,
+.backdrop.is-hidden .modal,
+.backdrop.is-hidden .modal-product,
+.backdrop.is-hidden .modal-franchise {
+  transform: translate(-50%, -50%) scale(1.1);
+  transition: transform 350ms $time-function;
+}
+.modal-buy,
+.modal-location,
+.modal,
+.modal-product,
+.modal-franchise {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 350ms $time-function;
 }
 // close button
