@@ -10,6 +10,7 @@
   transition: opacity 390ms $time-function;
   background-color: getcolor(modal-backdrop-bg-color);
   &.is-hidden {
+    transition: opacity 390ms $time-function;
     opacity: 0;
     pointer-events: none;
   }
