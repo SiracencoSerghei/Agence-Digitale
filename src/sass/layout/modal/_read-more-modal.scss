@@ -5,6 +5,8 @@
   height: 100%;
   padding: 26px;
 
+  width: 280px;
+
   text-align: center;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -13,7 +15,7 @@
   @media screen and (min-width: 480px) {
     top: 50%;
     left: 50%;
-    width: 280px;
+    
     height: 459px;
 
     transform: translate(-50%, -50%) scale(1);

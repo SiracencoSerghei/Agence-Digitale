@@ -2,7 +2,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 280px;
   height: 100%;
   padding: 26px;
   padding-right: 28px;
@@ -16,7 +16,7 @@
   @media screen and (min-width: $mobile) {
     top: 50%;
     left: 50%;
-    max-width: 280px;
+    
     max-height: 674px;
 
     transform: translate(-50%, -50%) scale(1);
