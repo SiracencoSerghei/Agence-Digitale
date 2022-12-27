@@ -17,13 +17,14 @@ button {
     transition: fill 250ms $time-function;
   }
 }
-input {
+input,
+textarea {
   transition: border-color 250ms $time-function, box-shadow 250ms $time-function;
   &:hover,
   &:focus {
     border-color: getcolor(accent);
     box-shadow: 1px 0px 16px 0px rgba(227, 220, 16, 0.35);
-    outline: 0;
+    outline: none;
   }
 }
 @keyframes rotate {
