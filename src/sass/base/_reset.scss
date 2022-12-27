@@ -10,16 +10,16 @@
 html {
   scroll-behavior: smooth;
 }
-//  цвет и оформления ползунка скролла
-// *::-webkit-scrollbar {
-//   width: 3px; /* ширина для вертикального скролла */
-//   height: 3px; /* высота для горизонтального скролла */
-//   background-color: transparent;
-//   position: absolute;
-// }
-// *::-webkit-scrollbar-thumb {
-//   background-color: #f8d24e;
-// }
+// цвет и оформления ползунка скролла
+*::-webkit-scrollbar {
+  width: 3px; /* ширина для вертикального скролла */
+  height: 3px; /* высота для горизонтального скролла */
+  background-color: transparent;
+  position: absolute;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #f8d24e;
+}
 
 body {
   padding: 0;

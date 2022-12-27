@@ -15,9 +15,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
-        "tags": [
-          "facebook"
-        ]
+        "tags": ["facebook"]
       },
       "attrs": [
         {
@@ -47,9 +45,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
-        "tags": [
-          "github"
-        ]
+        "tags": ["github"]
       },
       "attrs": [
         {
@@ -80,9 +76,7 @@
         "isMulticolor": false,
         "isMulticolor2": false,
         "grid": 0,
-        "tags": [
-          "telegram"
-        ]
+        "tags": ["telegram"]
       },
       "attrs": [
         {

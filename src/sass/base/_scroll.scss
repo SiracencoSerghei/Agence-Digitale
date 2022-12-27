@@ -1,14 +1,13 @@
-// .element-animation {
-//   opacity: 0;
-//   transform: translateY(20px);
-//   @media screen and (max-width: 767px) {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-// .element-show {
-//   transition: opacity 500ms $transition-function,
-//     transform 500ms $transition-function;
-//   opacity: 1;
-//   transform: translateY(0);
-// }
+.element-animation {
+  opacity: 0;
+  transform: translateY(20px);
+  @media screen and (max-width: 767px) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.element-show {
+  transition: opacity 500ms $time-function, transform 500ms $time-function;
+  opacity: 1;
+  transform: translateY(0);
+}
