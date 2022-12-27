@@ -6,13 +6,13 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-  @media screen and (min-width: 320px) and (max-width: 479px) {
-    width: 100%;
-    max-width: 280px;
-  }
+
+  width: 100%;
+  max-width: 280px;
+
 
   @media screen and (min-width: 768px) {
-    width: 568px;
+    max-width: 568px;
     height: 458px;
     padding: 32px 60px;
   }
