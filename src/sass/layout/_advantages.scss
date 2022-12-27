@@ -81,8 +81,9 @@ text-transform: lowercase;
      }
 }
 .advantages__item:not(:last-child){
-    @media screen and (max-width:768px){
     margin-bottom: 94px;
+    @media screen and (min-width:768px){
+    margin-bottom: 0;
     }
 }
 .advantages__item::before{
