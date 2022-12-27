@@ -1,22 +1,18 @@
 .modal-location {
   position: absolute;
   padding: 28px;
-
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-
   width: 100%;
   max-width: 280px;
-
-
+  text-align: center;
   @media screen and (min-width: 768px) {
     max-width: 568px;
     height: 458px;
     padding: 32px 60px;
   }
-  text-align: center;
 }
 
 .location-map {

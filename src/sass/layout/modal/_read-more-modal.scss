@@ -3,6 +3,7 @@
   height: 100%;
   max-height: 459px;
   padding: 26px;
+  max-height: 459px;
   width: 100%;
   max-width: 280px;
 
@@ -83,8 +84,4 @@
     font-size: 16px;
     line-height: 1.4;
   }
-}
-
-.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
 }
