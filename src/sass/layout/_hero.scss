@@ -152,7 +152,7 @@
     display: flex;
     gap: 32px;
     @media screen and (max-width: $pre-tablet) {
-      opacity: 0;
+      display: none;
     }
     @media screen and (min-width: $tablet) {
       bottom: 9px;
