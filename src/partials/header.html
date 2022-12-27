@@ -91,21 +91,24 @@
           <div class="page-header__menu-tablet">
             <nav class="nav page-header__nav">
               <ul class="nav__list">
-                <li class="nav__item"><a href="https://siracencoserghei.github.io/Agence-Digitale/#home">Home</a></li>
                 <li class="nav__item">
-                  <a href="https://siracencoserghei.github.io/Agence-Digitale/#how_its_made">How it’s made?</a>
+                  <a href="#home">Home</a>
                 </li>
                 <li class="nav__item">
-                  <a href="https://siracencoserghei.github.io/Agence-Digitale/#section-products">Our products</a>
+                  <a href="#how_its_made">How it’s made?</a>
                 </li>
-                <li class="nav__item"><a href="https://siracencoserghei.github.io/Agence-Digitale/#contact">Contact</a></li>
+                <li class="nav__item">
+                  <a href="#section-products">Our products</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </nav>
           </div>
           <button
             class="menu-order-button menu-order-button--mobile"
             type="button"
-            data-menu-order-open
             data-modal-id="buy-now-modal"
           >
             Buy now
@@ -125,8 +128,9 @@
       </div>
     </div>
     <button
-      class="menu-order-button menu-order-button--tablet new-btn-menu-order"
+      class="menu-order-button menu-order-button--tablet"
       type="button"
+      data-modal-id="buy-now-modal"
     >
       Buy now
       <svg
@@ -134,7 +138,6 @@
         width="12"
         height="12"
         aria-label="Перемикач мобільного меню"
-        data-modal-id="buy-now-modal"
       >
         <use class="icon-menu" href="./images/sprite.svg#short-arrow"></use>
       </svg>

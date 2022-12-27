@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  const links = document.querySelectorAll('.page-header__menu-mobile a');
 
   const toggleMenu = () => {
     const isMenuOpen =
@@ -14,6 +15,10 @@
       : 'enableBodyScroll';
     bodyScrollLock[scrollLockMethod](document.body);
   };
+
+  links.forEach(link => {
+    link.addEventListener('click', toggleMenu);
+  });
 
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
