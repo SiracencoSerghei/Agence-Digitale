@@ -4,7 +4,10 @@
 .page-header__menu-button {
     width: 32px;
     height: 32px;
-    fill: #FFFFFF;
+    & .icon-menu {
+        fill: #FFFFFF;
+    }
+    
     @media screen and (max-width: 767px) {
         margin: auto 20px auto auto;
     }
