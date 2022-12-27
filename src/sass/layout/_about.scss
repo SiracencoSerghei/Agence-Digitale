@@ -121,8 +121,9 @@ margin-bottom: 10px;
     &:focus{
         background-color: #0A8817;
         color: #FCFCFC;
-
-;
+    }
+    &:disabled{
+        background-color:  #ABABAB;
     }
 }
 .icon-menu {
