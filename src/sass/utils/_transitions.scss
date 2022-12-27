@@ -10,6 +10,21 @@ button {
   transition-duration: 250ms;
   transition-timing-function: $time-function;
   transition-property: color, background-color, box-shadow, fill, transform;
+  &:hover > svg {
+    fill: getcolor(accent);
+  }
+  & > svg {
+    transition: fill 250ms $time-function;
+  }
+}
+input {
+  transition: border-color 250ms $time-function, box-shadow 250ms $time-function;
+  &:hover,
+  &:focus {
+    border-color: getcolor(accent);
+    box-shadow: 1px 0px 16px 0px rgba(227, 220, 16, 0.35);
+    outline: 0;
+  }
 }
 @keyframes rotate {
   0% {
