@@ -10,6 +10,9 @@
   background-color: getcolor(primary-text-color);
   text-align: center;
   background-color: #fcfcfc;
+  border-radius: 10px;
+  border: 2px solid getcolor('accent');
+
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 650px;

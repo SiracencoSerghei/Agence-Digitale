@@ -8,9 +8,9 @@
         fill: getcolor(modal-bg-color);
     }
     
-    @media screen and (max-width: 767px) {
-        margin: auto 20px auto auto;
-    }
+    // @media screen and (max-width: 767px) {
+    //     margin: auto  auto auto;
+    // }
     @media screen and (min-width: 767px) {
         margin: 0 0 0 auto;
         height: 44px;
