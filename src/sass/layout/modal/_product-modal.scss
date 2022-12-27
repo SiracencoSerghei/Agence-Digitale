@@ -16,7 +16,6 @@
   transform: translate(0, -50%);
 
   @media screen and (min-width: $mobile) {
-    top: 50%;
     left: 50%;
     max-width: 280px;
     max-height: 968px;
@@ -34,23 +33,6 @@
 
 .is-hidden .modal-product {
   transform: translate(-50%, -50%) scale(1.1);
-}
-
-.modal-product__button {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 24px;
-  height: 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: getcolor('secondary-text-color');
-  background-color: getcolor('modal-bg-color');
-  border-radius: 50%;
-  border: none;
 }
 
 .modal-product__title {
