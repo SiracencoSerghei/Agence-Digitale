@@ -8,8 +8,7 @@
         transform: translateX(100%);
         overflow-y: auto;
         z-index: 1;
-        background-color: #84A178;
-
+        background-color: getcolor(imput-border-color);
         &.is-open {
             transform: translateX(0);
         }
@@ -121,7 +120,7 @@
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 700;
-    color: #FCFCFC;
+    color: getcolor(primary-text-color);
     
     @media screen and (max-width: 1199px) {
     margin-left: auto;
@@ -140,6 +139,14 @@
 .nav__item {
     &:hover,
     &:focus {
-        color: #F8D24E;
+        color: getcolor(secondary-text-color);
     }
+
+    @media screen and (min-width: $desktop) {
+        &:hover,
+    &:focus {
+        color: getcolor(accent);
+    }
+    }
+    
 }

@@ -98,6 +98,7 @@
     width: 47.3333%;
     max-width: 360px;
     @media screen and (max-width: $pre-tablet) {
+      max-width: 210px;
       bottom: 0;
       left: 50%;
       transform: translate(-50%);

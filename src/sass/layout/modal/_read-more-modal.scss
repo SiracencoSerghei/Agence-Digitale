@@ -14,7 +14,7 @@
   pointer-events: none;
 }
 
-.modal {
+.modal--read-more {
   position: absolute;
   top: 0;
   left: 0;
@@ -43,7 +43,7 @@
   }
 }
 
-.is-hidden .modal {
+.is-hidden .modal--read-more {
   transform: translate(-50%, -50%) scale(1.1);
 }
 
