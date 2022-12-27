@@ -25,9 +25,11 @@
 }
 .modal-buy,
 .modal-location,
-.modal,
+.modal--read-more,
 .modal-product,
 .modal-franchise {
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 350ms $time-function;
 }
