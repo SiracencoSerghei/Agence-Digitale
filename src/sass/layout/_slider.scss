@@ -1,7 +1,7 @@
 
 .galery-container {
 position: relative;
-top: -80px;
+top: -32px;
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     top: -144px;
 }
@@ -119,12 +119,12 @@ top: -80px;
     text-align: center;
 }
 
-.tns-outer {
-    @media screen and (max-width: $pre-tablet) {
-        margin-top: 50px;
-    }
+// .tns-outer {
+//     @media screen and (max-width: $pre-tablet) {
+//         margin-top: 50px;
+//     }
 
-}
+// }
 
 .tns-outer button {
     margin-right: 10px;
