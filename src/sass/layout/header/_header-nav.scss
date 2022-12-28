@@ -6,6 +6,8 @@
         width: 100%;
         height: 100%;
         transform: translateX(100%);
+        transition: transform 350ms $time-function;
+  
         overflow-y: auto;
         z-index: 1;
         background-color: getcolor(imput-border-color);
