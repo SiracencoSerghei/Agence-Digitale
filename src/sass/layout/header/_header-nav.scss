@@ -138,7 +138,7 @@
         padding-bottom: 13px;
     }
 }
-.nav__item {
+.nav__item a {
     &:hover,
     &:focus {
         color: getcolor(secondary-text-color);

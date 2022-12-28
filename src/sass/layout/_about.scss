@@ -107,6 +107,7 @@ margin-bottom: 10px;
 
     background-color: #F8D24E;
     border-radius: 10px;
+    transition: background-color 250ms $time-function;
     @media screen and (min-width: 768px){
         margin-left: 180px;
         margin-bottom: 162px;
