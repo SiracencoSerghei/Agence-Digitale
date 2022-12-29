@@ -18,6 +18,7 @@
 
   links.forEach(link => {
     link.addEventListener('click', toggleMenu);
+    link.matchMedia('(max-width:1199px)');
   });
 
   openMenuBtn.addEventListener('click', toggleMenu);
@@ -31,4 +32,3 @@
     bodyScrollLock.enableBodyScroll(document.body);
   });
 })();
-
