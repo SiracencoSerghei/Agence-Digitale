@@ -98,7 +98,8 @@ text-transform: lowercase;
     border-radius: 50%;
     // background-image: url(../images/advantages/cow@1x.png);
     background-repeat: no-repeat;
-        background-size: contain;
+    background-position: 50% 50%;
+        background-size: 36px;
         @media screen and (min-width:768px){
             top: -89px;
         }
