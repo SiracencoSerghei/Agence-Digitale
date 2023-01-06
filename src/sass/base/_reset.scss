@@ -14,7 +14,7 @@ html {
 *::-webkit-scrollbar {
   width: 3px; /* ширина для вертикального скролла */
   height: 3px; /* высота для горизонтального скролла */
-  background-color: transparent;
+  background-color: #84a178;
   position: absolute;
 }
 *::-webkit-scrollbar-thumb {
@@ -101,6 +101,7 @@ input {
   outline: none;
 }
 
-section, footer {
+section,
+footer {
   margin-top: -2px;
 }
