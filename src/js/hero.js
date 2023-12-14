@@ -6,6 +6,7 @@
  *
  */
 
+
 const data = {
   config: {
     min: 0,
